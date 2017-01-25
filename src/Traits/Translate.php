@@ -15,13 +15,16 @@ trait Translate
     /*
      *
      */
-    public function translate($type=null)
+    public function translate($type=null, $locale=null)
     {
         if($type){
             $translate = $this->translatables->where('locale', config('app.locale'))->where('type', $type)->first();
-            return isset($translate) ? $translate->value : $type;
+        }elseif($locale && $type){
+            $translate = $this->translatables->where('locale', $locale)->where('type', $type)->first();
+        }else{
+            return $this->translatables->where('locale', config('app.locale'));
         }
-        return $this->translatables->where('locale', config('app.locale'));
+        return isset($translate) ? $translate->value : $type;
     }
 
     /*
