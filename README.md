@@ -1,2 +1,2 @@
 # Laravel Translate Data
-Forfait pour la traduction des champs dans la base de données selon le modèle et le système langage de configuration
+Package for the translation of the fields in the database according to the language of configuration of the laravel system.
