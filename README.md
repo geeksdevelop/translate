@@ -1,5 +1,5 @@
 # Laravel Translate Data
-Package for the translation of the fields in the database according to the language of configuration of the laravel system.
+Package for the translation of fields in the database according to the language of configuration of the laravel system.
 
 ## Installation
 ```bash
@@ -72,7 +72,7 @@ $post->setTranslate('fr', 'title', 'Après le titre');
 ```
 
 ## Get the translation
-To get a translation we just have to make use of the method `translate()`, which entered the type will bring us the translation depending on the language in which the laravel system
+To get a translation we just have to make use of the method `translate()`, which by entering the type will give us the translation depending on the language in which the laravel system is configurated.
 ```php
 $post->translate('title');
 #Title of the post
@@ -82,7 +82,7 @@ If you want to get a specific translation in a language other than the one that 
 $post->translate('title', 'fr');
 #Après le titre
 ```
-Using `translate()`, we can bring all the traditions that have registered the model in different languages.
+Using `translate()`, we can get all the translations that have been registered on the model in different languages.
 ```php
 $post->translate();
 /*
@@ -106,7 +106,7 @@ translate => [
 ```
 
 ## Update translations
-To update the method will be used `updateTranslate(locale, type, value)`
+To update, the method to be used is `updateTranslate(locale, type, value)`
 ```php
 $post->updateTranslate($locale, $type, $value);
 ```
