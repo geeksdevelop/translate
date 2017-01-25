@@ -1,0 +1,19 @@
+{
+    "name": "geeksdevelop/translate",
+    "description": "Package for handling translations of data in the database",
+    "keywords": ["translate"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miguel Lobo",
+            "email": "wmaster732@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Geeksdevelop\\Translate\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
