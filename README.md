@@ -1,5 +1,5 @@
-# Laravel Translate Data 5.3
-Package for the translation of fields in the database according to the language of configuration of the laravel system.
+# Laravel Translate Data
+Package for the translation of fields in the database according to the language of configuration of the laravel 5.3 system.
 
 ## Installation
 ```bash
