@@ -17,12 +17,12 @@ trait Translate
      */
     public function translate($type=null, $locale=null)
     {
-        if($type){
+        if($type && !$locale){
             $translate = $this->translatables->where('locale', config('app.locale'))->where('type', $type)->first();
-        }elseif($locale && $type){
+        }elseif($type && $locale){
             $translate = $this->translatables->where('locale', $locale)->where('type', $type)->first();
         }else{
-            return $this->translatables->where('locale', config('app.locale'));
+            return $this->translatables;
         }
         return isset($translate) ? $translate->value : $type;
     }

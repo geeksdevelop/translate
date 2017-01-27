@@ -1,5 +1,6 @@
 # Laravel Translate Data
-Package for the translation of fields in the database according to the language of configuration of the laravel 5.3 system.
+###Compatible with laravel
+Package for the translation of fields in the database according to the language of configuration of the laravel system.
 
 ## Installation
 ```bash
@@ -16,6 +17,12 @@ Add the package to your application service providers in `config/app.php` file.
      */
     Geeksdevelop\Translate\TranslateProvider::class,
 ],
+```
+
+### Publish
+Publish the migration to your application. Run these commands inside your terminal.
+```bash
+  php artisan vendor:publish --provider="Geeksdevelop\Translate\TranslateProvider"
 ```
 
 ### Migrate the tables
