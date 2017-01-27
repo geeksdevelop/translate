@@ -1,5 +1,5 @@
 # Laravel Translate Data
-###Compatible with laravel ^5.1
+###Compatible with laravel versions 5.1, 5.2, 5.3 and 5.4
 Package for the translation of fields in the database according to the language of configuration of the laravel system.
 
 ## Installation
