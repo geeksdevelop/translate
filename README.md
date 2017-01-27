@@ -3,7 +3,7 @@ Package for the translation of fields in the database according to the language 
 
 ## Installation
 ```bash
-  composer require geeksdevelop/translate
+  composer require geeksdevelop/translate "dev-master"
 ```
 ### Service Provider
 
